@@ -24,7 +24,7 @@ public class BaseTest {
     @BeforeMethod(alwaysRun = true)
     public void accessPage() {
         driver = new ChromeDriver();
-        driver.get("https://google.com");
+        driver.get("https://google.com.vn");
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {

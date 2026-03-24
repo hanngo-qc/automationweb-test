@@ -1,0 +1,63 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 6, Errors: 0, Skipped: 11, Time elapsed: 7.061 s <<< FAILURE! - in TestSuite
+automationweb.automationwebtest.BaseTest.setupTestData  Time elapsed: 4.091 s  <<< FAILURE!
+io.github.bonigarcia.wdm.config.WebDriverManagerException: There was an error creating WebDriver object for Chrome
+	at automationweb.automationwebtest.BaseTest.setupTestData(BaseTest.java:21)
+Caused by: java.lang.reflect.InvocationTargetException
+	at automationweb.automationwebtest.BaseTest.setupTestData(BaseTest.java:21)
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 136.0.7103.116 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: '10.10.10.103', ip: 'fe80:0:0:0:18fe:649c:9d2:9469%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at automationweb.automationwebtest.BaseTest.setupTestData(BaseTest.java:21)
+
+automationweb.automationwebtest.LoginPageTest.accessPage  Time elapsed: 4.748 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 136.0.7103.116 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: '10.10.10.103', ip: 'fe80:0:0:0:18fe:649c:9d2:9469%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+
+automationweb.automationwebtest.LoginPageTest.accessPage  Time elapsed: 0.541 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 136.0.7103.116 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: '10.10.10.103', ip: 'fe80:0:0:0:18fe:649c:9d2:9469%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+
+automationweb.automationwebtest.LoginPageTest.accessPage  Time elapsed: 0.597 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 136.0.7103.116 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: '10.10.10.103', ip: 'fe80:0:0:0:18fe:649c:9d2:9469%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+
+automationweb.automationwebtest.LoginPageTest.accessPage  Time elapsed: 0.593 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 136.0.7103.116 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: '10.10.10.103', ip: 'fe80:0:0:0:18fe:649c:9d2:9469%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+
+automationweb.automationwebtest.LoginPageTest.accessPage  Time elapsed: 0.535 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 136.0.7103.116 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: '10.10.10.103', ip: 'fe80:0:0:0:18fe:649c:9d2:9469%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+

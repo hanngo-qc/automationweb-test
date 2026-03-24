@@ -43,10 +43,10 @@ public class LoginPageTest extends BaseTest {
         WelcomePage welcomePage = new WelcomePage(driver);
 
         logger.info("Access Login page");
-        Assert.assertEquals(TestConstants.LOGIN_PAGE_TITLE, loginPage.getPageTitle());
+        Assert.assertEquals(loginPage.getPageTitle(), TestConstants.LOGIN_PAGE_TITLE);
         loginPage.loginAccount(validEmail, validPassword);
-        Assert.assertEquals(TestConstants.WELCOME_PAGE_TITLE, welcomePage.getPageTitle());
-        Assert.assertEquals(TestConstants.LOGIN_SUCCESS_NOTIFY, welcomePage.getLoginSuccessfullyNotify());
+        Assert.assertEquals(welcomePage.getPageTitle(), TestConstants.WELCOME_PAGE_TITLE);
+        Assert.assertEquals(welcomePage.getLoginSuccessfullyNotify(), TestConstants.LOGIN_SUCCESS_NOTIFY);
         logger.info("User can login successfully");
     }
 
@@ -55,9 +55,9 @@ public class LoginPageTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
 
         logger.info("Access Login page");
-        Assert.assertEquals(TestConstants.LOGIN_PAGE_TITLE, loginPage.getPageTitle());
+        Assert.assertEquals(loginPage.getPageTitle(), TestConstants.LOGIN_PAGE_TITLE);
         loginPage.loginAccount(invalidEmail, validPassword);
-        Assert.assertEquals(TestConstants.INCORRECT_PASSWORD_MESSAGE, loginPage.getErrorEmailPasswordMessage());
+        Assert.assertEquals(loginPage.getErrorEmailPasswordMessage(), TestConstants.INCORRECT_PASSWORD_MESSAGE);
         logger.info("User cannot login when entering a wrong email address");
     }
 
@@ -66,9 +66,9 @@ public class LoginPageTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
 
         logger.info("Access Login page");
-        Assert.assertEquals(TestConstants.LOGIN_PAGE_TITLE, loginPage.getPageTitle());
+        Assert.assertEquals(loginPage.getPageTitle(), TestConstants.LOGIN_PAGE_TITLE);
         loginPage.loginAccount(validEmail, invalidPassword);
-        Assert.assertEquals(TestConstants.INCORRECT_PASSWORD_MESSAGE, loginPage.getErrorEmailPasswordMessage());
+        Assert.assertEquals(loginPage.getErrorEmailPasswordMessage(), TestConstants.INCORRECT_PASSWORD_MESSAGE);
         logger.info("User cannot login when entering a wrong password");
     }
 
@@ -77,9 +77,9 @@ public class LoginPageTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
 
         logger.info("Access Login page");
-        Assert.assertEquals(TestConstants.LOGIN_PAGE_TITLE, loginPage.getPageTitle());
+        Assert.assertEquals(loginPage.getPageTitle(), TestConstants.LOGIN_PAGE_TITLE);
         loginPage.loginAccount(invalidEmail, invalidPassword);
-        Assert.assertEquals(TestConstants.INCORRECT_PASSWORD_MESSAGE, loginPage.getErrorEmailPasswordMessage());
+        Assert.assertEquals(loginPage.getErrorEmailPasswordMessage(), TestConstants.INCORRECT_PASSWORD_MESSAGE);
         logger.info("User cannot login when entering a wrong email address or password");
     }
 

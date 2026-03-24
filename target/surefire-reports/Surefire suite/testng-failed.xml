@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="automationweb.automationwebtest.LoginPageTest">
+        <methods>
+          <include name="afterFinishTest"/>
+          <include name="accessPage"/>
+          <include name="loginEmailSuccessfully"/>
+          <include name="loginFailedByNotExistedEmail"/>
+          <include name="setupTestData"/>
+          <include name="setUpTestData"/>
+          <include name="loginFailedByWrongEmailAndPassword"/>
+          <include name="loginFailedByWrongPassword"/>
+          <include name="getPageTitle"/>
+        </methods>
+      </class> <!-- automationweb.automationwebtest.LoginPageTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
